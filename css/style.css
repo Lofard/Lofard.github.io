@@ -2,65 +2,42 @@
 	padding: 0;
 	margin: 0;
 	text-decoration: 0;
+	a
 
 }
 @font-face {
 	font-family: Hermes;
 	src: url(../font/compact_[allfont.ru].ttf);
 	}
-
-
-body{
-	background: #61D16B;
-
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
-#wrapper{
-	background: #F7F7F7;
-	width: 800px;
-	min-height: 1000px;
-	margin: auto;
-	box-shadow: 0px 0px 1px  rgba(0,0,0,.3)
-	
-}
 
-nav{
-	
-	width: 800px;
-	height: 128px;
-	margin:  auto ;
-	background-color: #AAEB9A;
-	box-shadow: 0px 1px 1px rgba(0,0,0,.3)
-	
-}
-.about-me{
-	float: left;
-	position: relative;
-}
-.my-photo{
-	background: url(../img/my-photo.jpg);
-	width: 248px;
-	height: 415px;
+#page_one{
+	background: url(../img/BG.png);
+	width: 100%;
+	height: 100vh;
 	background-size: cover;
-	margin: 72px 0px 0px 72px;
-	box-shadow: 0px 0px 1px 1px rgba(0,0,0,.3)
+	background-position: center;
+	animation: fade-in .5s ease;
 }
-
-.line{
-	
-	width: 1px;
-	height: 415px;
-	background: rgba(0,0,0,.3);
+.logo{
+	background: url(../img/SFDG.png);
+	width: 256px;
+	height: 256px;
+	margin: 0px auto 0px;
 	position: relative;
-	left: 400px;
-	bottom: 415px
+	top: 27vh;
+	animation: fade-in 1.5s ease;
 }
-.my{
-	width: 248px;
-	height: 415px;
-	position: absolute;
-	left: 480px;
-	bottom: 415px;
-	font-family: Verdana;
-	font-size: 16px;
+body{
+	min-height: 2000px;
+	/*overflow: hidden;*/
+	scroll-behavior: smooth;
 }
