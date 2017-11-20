@@ -7,16 +7,64 @@
 	
 </head>
 <body>
-	<div id="page_one"><a href="#top" id="vverh">вниз</a>
+	
+	<!-- page_one -->
+	
+	<div id="page_one">	
+
+
+			
+		
+
+		<!-- nav -->
+
+		<nav>
+			<ul>
+				<a href="#page_one" ><li></li></a>
+				<a href="#page_two" ><li></li></a>
+				<a href="#page_three"><li ></li></a>
+			</ul>
+		</nav>
+
+		<!-- nav -->
+
 		<div class="logo"></div>
+		
 	</div>
-	<a name="top">sdf</a>
+
+	<!-- page_one -->
+
+	<!-- page_two -->
+
+	<div id="page_two">
+		
+	</div>
+
+	<!-- page_two -->
+
+	<!-- page_three -->
+	
+	<div id="page_three">
+		
+	</div>
+	<!-- page_three -->
+	<div id="top"></div>
 	<script>
-		<script>
-		function vverh() {
-  			window.scrollBy(10,0); 
-  				if (window.pageYOffset > 0) {requestAnimationFrame(vverh);} 
-}
+		function pt (argument1) {
+			var el = document.querySelector("button");
+			document.getElementsByClassName(.style.background ='black';
+		};
+	</script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("body").on("click","a", function (event) {
+				event.preventDefault();
+				var id  = $(this).attr('href'),
+ 				top = $(id).offset().top;
+       		    $('body,html').animate({scrollTop: top}, 1000);
+    });
+});
 	</script>
 </body>
 </html>
