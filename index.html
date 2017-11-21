@@ -68,7 +68,7 @@
 	<!-- page_three -->
 	
 	<div id="page_three">
-		<p><a href="img/bg.jpg" download="asdfas">Скачать файл</a>
+		<p><a href="img/my-photo.jpg" download>Скачать файл</a>
 	</div>
 	<!-- page_three -->
 	<div id="top"></div>
@@ -101,11 +101,11 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script>
 		$(document).ready(function(){
-			$("body").on("click","a", function (event) {
+			$("a[href^='#']").click(function() {
 				event.preventDefault();
 				var id  = $(this).attr('href'),
  				top = $(id).offset().top;
-       		    $('body,html').animate({scrollTop: top}, 1000);
+       		    $('body,html').animate({scrollTop: top}, 500);
     });
 });
 
