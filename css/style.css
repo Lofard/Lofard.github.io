@@ -8,7 +8,7 @@
 }
 @font-face {
 	font-family: Hermes;
-	src: url(../font/compact_[allfont.ru].ttf);
+	src: url(../font/BadScript-Regular.ttf);
 	}
 @keyframes fade-in {
     0% {
@@ -57,9 +57,7 @@ body{
 
 nav{
 	height: 64px;
-	width: 20px;
-	
-	position: fixed;
+	width: 30px;
 	z-index: 9999;
 	position: fixed;
 	right: 10px;
@@ -70,12 +68,93 @@ nav>ul>a>li{
 	width: 15px;
 	height: 15px;
 	border-radius: 50%;
-	
+	background: white;
 	margin-top: 10px;
+	transition: all .2s;
+	margin-left: 10px;
+	margin-right: 10px;
+	box-shadow: 1px 1px 0px 1px rgba(0,0,0,.1);
 }
-
+nav>ul>a>li:hover{
+	width: 25px;
+	height: 25px;
+	transition: all .3s;
+	position: block;
+	margin-left: -0px;
+	background:#EBEBEB;
+}
 .button{
 	background: url(../img/bg_buuton.png);
 	transition: all .1s
 
+}
+.active{
+	background: #C2C2C2
+}
+
+.about-me{
+	width: 960px;
+	height:480px;
+	background: white;
+	margin: 0px auto 0px;
+	position: relative;
+	top: 12vh;
+	border: 1px solid #D4D4D4;
+	/*border-radius: 5px;*/
+	box-shadow: 2px 2px  rgba(0,0,0,.1);
+	
+}
+
+.one{
+	width: 50%;
+	height: 480px;
+	position: relative;
+}
+.two{
+	width: 50%;
+	height: 480px;
+	background:rgba(0,0,0,.03);
+	float: left;
+	position: relative;
+	bottom: 480px;
+	left: 50%
+
+}
+.my-photo{
+	/*box-shadow: 2px 2px rgba(0,0,0,.1);*/
+	/*border-radius: 2px;*/
+	margin: 0px 111px 0px;
+	width: 250px;
+	height: 400px;
+	background: url(../img/my-photo.jpg);
+	background-size: cover;
+	position:relative;
+	top: 40px;
+	transition: all .3s
+
+}
+.my-photo:hover{
+	width: 260px;
+	height: 400px;
+	margin-left: 106px;
+	top: 40px
+}
+
+.line{
+	width: 1px;
+	height: 400px;
+	background: rgba(0,0,0,.2);
+	margin-top: 40px;
+	margin-left: 40px
+}
+.line>.line{
+	margin-left: -80px
+}
+.text{
+	width:360px;
+	height: 400px;
+	left: 80px;
+	font-family: hermes;	
+	position: relative;
+	top: -400px; 
 }
