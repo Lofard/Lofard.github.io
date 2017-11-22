@@ -19,10 +19,12 @@
 		<!-- nav -->
 
 		<nav>
+			<div class="dada "></div>
 			<ul>
 				<a href="#page_one" onclick="cb(1)"><li class="b1 active" ></li></a>
 				<a href="#page_two" onclick="cb(2)"><li class="b2"></li></a>
 				<a href="#page_three" onclick="cb(3)"><li class="b3"></li></a>
+				<a href="#page_four" onclick="cb(4)"><li class="b4"></li></a>
 			</ul>
 		</nav>
 
@@ -53,7 +55,7 @@
 				</div>
 				<div class="text">
 					Всем привет. Мня зовут Андрей, Гусев Андрей. Мне 17 лет. Два из которых я обучаюсь в ЭПЭТ'е. <br> <br>
-					Достаточно способный ученик, есил надо могу чем-нибудь помочь.
+					Достаточно способный ученик, если надо могу чем-нибудь помочь.
 					<br><br>
 					По будущей професии я - техник по компьютеным системам, но, если говорить правду, я не особо понимаю, что я буду делать, когда получу диплом.
 					<br><br>
@@ -68,24 +70,45 @@
 	<!-- page_three -->
 	
 	<div id="page_three">
-		<p><a href="img/my-photo.jpg" download>Скачать файл</a>
-	</div>
 	<!-- page_three -->
-	<div id="top"></div>
+		<div class="labw">
+			<ul>
+				<li class="n1"><div class="downbutt"><a href="labworks/lw1.pdf" download>СКАЧАТЬ</a></div></li>
+				<li class="n2"><div class="downbutt"><a href="labworks/lw2.pdf" download>СКАЧАТЬ</a></div></li>
+				<li class="n3"><div class="downbutt"><a href="labworks/lw3.pdf" download>СКАЧАТЬ</a></div></li>
+				<li class="n4"><div class="downbutt"><a href="labworks/lw4.pdf" download>СКАЧАТЬ</a></div></li>
+				<li class="n5"><div class="downbutt"><a href="labworks/lw5.pdf" download>СКАЧАТЬ</a></div></li>
+				<li class="n6"><div class="downbutt"><a href="labworks/lw6.pdf" download>СКАЧАТЬ</a></div></li>
+				<li class="n7"><div class="downbutt"><a href="labworks/lw7.pdf" download>СКАЧАТЬ</a></div></li>
+				<li class="n8"><div class="downbutt"><a href="labworks/lw8.pdf" download>СКАЧАТЬ</a></div></li>
+			</ul>
+		</div>
+	</div>
+	<div id="page_four">
+
+	<div class="finish">
+		DESIGN BY LOFARD <br><br>(A.K.A ADNREW GUSEV) <br><br>
+		(А.К.А ГУСЕВ АНДРЕЙ)
+	</div>
+	</div>
 	<script>
 		function cb (argument) {
 			 if (argument == 1){
 	   			 $('body').click(function(){
 				 $('.b1').addClass('active');
 				 $('.b2').removeClass('active').addClass('');  
-				 $('.b3').removeClass('active').addClass('');           	
+				 $('.b3').removeClass('active').addClass(''); 
+				 $('.b4').removeClass('active').addClass('');  
+				 $('.dada').removeClass('circle').addClass('');        	
         });
    };
         	if (argument == 2 ){
         		$('body').click(function(){
 				$('.b2').addClass('active');
 				$('.b1').removeClass('active').addClass('');  
-				$('.b3').removeClass('active').addClass('');  
+				$('.b3').removeClass('active').addClass(''); 
+				$('.b4').removeClass('active').addClass(''); 
+				$('.dada').removeClass('circle').addClass('');
         	 });
         	};
         	if (argument == 3 ){
@@ -93,6 +116,17 @@
 				$('.b3').addClass('active');
 				$('.b1').removeClass('active').addClass('');  
 			 	$('.b2').removeClass('active').addClass('');  
+			 	$('.b4').removeClass('active').addClass('');
+			 	$('.dada').removeClass('circle').addClass('');
+        	 });
+        	};
+        	if (argument == 4 ){
+        		$('body').click(function(){
+				$('.b4').addClass('active');
+				$('.b1').removeClass('active').addClass('');  
+			 	$('.b2').removeClass('active').addClass('');  
+			 	$('.b3').removeClass('active').addClass('');
+			 	$('.dada').addClass('circle');
         	 });
         	};
 }
@@ -108,7 +142,13 @@
        		    $('body,html').animate({scrollTop: top}, 500);
     });
 });
-
+		$( ".finish" ).hover(
+  function() {
+    $( '.' ).append( $( "<span> ***</span>" ) );
+  }, function() {
+    $( this ).find( "span:last" ).remove();
+  }
+);
 	
 	</script>
 </body>

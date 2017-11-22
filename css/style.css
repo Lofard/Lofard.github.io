@@ -40,6 +40,12 @@
 	height: 100vh;
 	width: 100%;
 }
+#page_four{
+	background: url(../img/bg_buuton.png);
+	background-repeat: repeat;
+	height: 100vh;
+	width: 100%;
+}
 .logo{
 	background: url(../img/SFDG.png);
 	width: 256px;
@@ -76,12 +82,13 @@ nav>ul>a>li{
 	box-shadow: 1px 1px 0px 1px rgba(0,0,0,.1);
 }
 nav>ul>a>li:hover{
-	width: 25px;
-	height: 25px;
+	width: 30px;
+	height: 30px;
 	transition: all .3s;
 	position: block;
-	margin-left: -0px;
+	margin-left: -5px;
 	background:#EBEBEB;
+	margin-top: 
 }
 .button{
 	background: url(../img/bg_buuton.png);
@@ -89,7 +96,12 @@ nav>ul>a>li:hover{
 
 }
 .active{
-	background: #C2C2C2
+	/*background: #C2C2C2;*/
+	width: 25px;
+	height: 25px;
+	margin-left: -0px;
+	margin-top: 5px;
+	margin-bottom: 5px;
 }
 
 .about-me{
@@ -99,9 +111,9 @@ nav>ul>a>li:hover{
 	margin: 0px auto 0px;
 	position: relative;
 	top: 12vh;
-	border: 1px solid #D4D4D4;
+	
 	/*border-radius: 5px;*/
-	box-shadow: 2px 2px  rgba(0,0,0,.1);
+	box-shadow: 4px 4px  rgba(0,0,0,.1);
 	
 }
 
@@ -120,6 +132,22 @@ nav>ul>a>li:hover{
 	left: 50%
 
 }
+.finish{
+	width: 500px;
+	height: 350px;
+	color: white;
+	font-family: hermes;
+	font-size: 32px;
+	margin: 0 auto;
+	position: relative;
+	top: 20vh;
+	text-align: center;
+	background: rgba(0,0,0,.9);
+	padding-top: 30px;
+	box-shadow: 4px 4px  rgba(0,0,0,.1);
+
+
+}
 .my-photo{
 	/*box-shadow: 2px 2px rgba(0,0,0,.1);*/
 	/*border-radius: 2px;*/
@@ -130,7 +158,8 @@ nav>ul>a>li:hover{
 	background-size: cover;
 	position:relative;
 	top: 40px;
-	transition: all .3s
+	transition: all .3s;
+	box-shadow: 4px 4px  rgba(0,0,0,.1);
 
 }
 .my-photo:hover{
@@ -143,7 +172,7 @@ nav>ul>a>li:hover{
 .line{
 	width: 1px;
 	height: 400px;
-	background: rgba(0,0,0,.2);
+	background: rgba(0,0,0,.0);
 	margin-top: 40px;
 	margin-left: 40px
 }
@@ -157,4 +186,101 @@ nav>ul>a>li:hover{
 	font-family: hermes;	
 	position: relative;
 	top: -400px; 
+}
+.labw{
+	width: 956px;
+	height: 500px;
+	/*background: white;*/
+	margin-left: 40px;
+	display: list-item;
+	margin: 0 auto;
+	top:-42vh;
+	position: relative;
+	box-shadow: 4px 3px 0px rgba(0,0,0,.08);
+	display: flex;
+	
+	align-items: stretch;
+	justify-content:space-between;
+
+}
+
+.labw>ul>li{
+	display: inline-flex;
+	height: 498px;
+	width: 114px;
+	justify-content:space-between;
+	border: 1px solid rgba(0,0,0,0);
+	transition: all .5s;
+	background-size: cover;
+	box-shadow: 2px 2px 0px rgba(0,0,0,.08);
+
+	
+}
+
+.n1{
+	background: url(../img/1.PNG);
+	
+	transition: all .5s
+
+}
+
+.n2{
+	background: url(../img/2.PNG);
+	
+}
+.n3{
+	background: url(../img/3.PNG);
+}
+.n4{
+	background: url(../img/4.PNG);
+}
+.n5{
+	background: url(../img/5.PNG);
+}
+.n6{
+	background: url(../img/6.PNG);
+}
+.n7{
+	background: url(../img/7.PNG);
+}
+.n8{
+	background: url(../img/8.PNG);
+}
+
+.downbutt{
+	display: table;
+	width: 116px;
+	height: 27px;
+	background: #FF5E5E;
+	position: relative;
+	top: 467px;
+	right: 1px;	
+	border-radius: 1px;
+	color: white;
+	font-family: tahoma;
+	text-align: center;
+	padding-top: 5px;
+	transition: all .5s
+}
+.downbutt:hover{
+	background: #FF9E9E;
+}
+
+.downbutt>a{
+	padding-top: 5px;
+	color: white
+}
+.circle{
+	width: 170px;
+	height: 170px;
+	background: rgba(0,0,0,.8);
+	border-radius: 50%;
+	position: relative;
+	float: right;
+	z-index: -1;
+	left: 110px;	
+	top: -25px
+}
+.dada{
+	transition: all .5s
 }
