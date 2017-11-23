@@ -51,8 +51,9 @@
 	width: 256px;
 	height: 256px;
 	margin: 0px auto 0px;
-	position: relative;
-	top: 27vh;
+	 margin: auto;
+  position: absolute;
+  top: 0vh; left: 0; bottom: 0; right: 0;
 	animation: fade-in 1.5s ease;
 }
 body{
@@ -108,11 +109,9 @@ nav>ul>a>li:hover{
 	width: 960px;
 	height:480px;
 	background: white;
-	margin: 0px auto 0px;
-	position: relative;
-	top: 12vh;
-	
-	/*border-radius: 5px;*/
+	 margin: auto;
+  position: absolute;
+  top: 200vh; left: 0; bottom: 0; right: 0;
 	box-shadow: 4px 4px  rgba(0,0,0,.1);
 	
 }
@@ -138,9 +137,9 @@ nav>ul>a>li:hover{
 	color: white;
 	font-family: hermes;
 	font-size: 32px;
-	margin: 0 auto;
-	position: relative;
-	top: 20vh;
+	 margin: auto;
+  position: absolute;
+  top: 600vh; left: 0; bottom: 0; right: 0;
 	text-align: center;
 	background: rgba(0,0,0,.9);
 	padding-top: 30px;
@@ -194,8 +193,9 @@ nav>ul>a>li:hover{
 	margin-left: 40px;
 	display: list-item;
 	margin: 0 auto;
-	top:-42vh;
-	position: relative;
+	 margin: auto;
+  position: absolute;
+  top: 400vh; left: 0; bottom: 0; right: 0;
 	box-shadow: 4px 3px 0px rgba(0,0,0,.08);
 	display: flex;
 	
