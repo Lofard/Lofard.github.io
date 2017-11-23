@@ -5,74 +5,39 @@
 	list-style: none;
 
 }
+@font-face {
+	font-family: Hermes;
+	src: url(../font/BadScript-Regular.ttf);
+	}
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+nav{
+	width: 100%;
+	height: 100vh;
+	background: url(../img/bg_buuton.png);
+	background-repeat: repeat;
 
-#page1{
-	width: 100%;
-	height: 100vh;
-	background: red
-}
-#page2{
-	width: 100%;
-	height: 100vh;
-	background: green
-}
-#page3{
-	width: 100%;
-	height: 100vh;
-	background: blue
-}
-#page4{
-	width: 100%;
-	height: 100vh;
-	background: pink
-}
-#page5{
-	width: 100%;
-	height: 100vh;
-	background: gray
-}
-#page6{
-	width: 100%;
-	height: 100vh;
-	background: #
-}
-#page7{
-	width: 100%;
-	height: 100vh;
-	background: #
-}
-#page8{
-	width: 100%;
-	height: 100vh;
-	background: #
-}
-#page9{
-	width: 100%;
-	height: 100vh;
-	background: #
-}
-#page10{
-	width: 100%;
-	height: 100vh;
-	background: #
 }
 
-.bd{
-	width: 64px;
-	height: 24px;
-	background: white;
-	position:relative;
-	bottom:-95vh;
-	border-radius: 5px;
+.logo{
+	width: 512px;
+	height: 312px;
+	background: rgba(0,0,0,.9);
+	color: white;
+	font-family: hermes;
+	font-size: 32px;
+	border-radius: 50%;
+	text-align: center;
+	padding-top: 200px;
 	margin: 0 auto;
-}
+	 margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
 
-.bu{
-	width: 64px;
-	height: 24px;
-	background: white;
-	position:relative;
-	bottom: 15px;
-	border-radius: 5px;
-	margin: 0 auto;
 }
