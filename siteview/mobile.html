@@ -3,13 +3,28 @@
 <head>
 	<meta charset="UTF-8">
 	<title>	</title>
-	<style>
-			body{
-				background: red
-			}	
-	</style>
+	<link rel="stylesheet" href="../css/mobile_style.css">
 </head>
 <body>
-	
+	<div id="page1"><a href="#page2"><div class="bd"></div></a></div>
+	<div id="page2"><a href="#page3" > <div class="bd"></div></a>	<a href="#page1" > <div class="bu"></div></a></div>
+	<div id="page3"><a href="#page4" > <div class="bd"></div></a>	<a href="#page2" > <div class="bu"></div></a></div>
+	<div id="page4"><a href="#page5" > <div class="bd"></div></a>	<a href="#page3" > <div class="bu"></div></a></div>
+	<div id="page5"><a href="#page6" > <div class="bd"></div></a>	<a href="#page4" > <div class="bu"></div></a></div>
+	<div id="page6"><a href="#page7" > <div class="bd"></div></a>	<a href="#page5" > <div class="bu"></div></a></div>
+	<div id="page7"><a href="#page8" > <div class="bd"></div></a>	<a href="#page6" > <div class="bu"></div></a></div>
+	<div id="page8"><a href="#page9" > <div class="bd"></div></a>	<a href="#page7" > <div class="bu"></div></a></div>
+	<div id="page9"><a href="#page8" > <div class="bu"></div></a></div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("a[href^='#']").click(function() {
+				event.preventDefault();
+				var id  = $(this).attr('href'),
+ 				top = $(id).offset().top;
+       		    $('body,html').animate({scrollTop: top}, 500);
+    });
+});
+	</script>
 </body>
 </html>
