@@ -17,26 +17,56 @@
         opacity: 1;
     }
 }
-nav{
+
+
+body{
+	min-height: 2000px;
+	overflow: hidden;
+	/*background: #EAFFE7;*/
+}
+
+.hello{
 	width: 100%;
 	height: 100vh;
 	background: url(../img/bg_buuton.png);
 	background-repeat: repeat;
 
+
 }
 
 .logo{
-	width: 512px;
-	height: 312px;
-	background: rgba(0,0,0,.9);
-	color: white;
-	font-family: hermes;
-	font-size: 48px;
-	text-align: center;
-	padding-top: 200px;
-	margin: 0 auto;
-	 margin: auto;
-  position: absolute;
-  top: 0; left: 0; bottom: 0; right: 0;
+	margin: auto;
+  	position: absolute;
+  	top: 0; left: 0; bottom: 0; right: 0;
+  	height: 320px;
+  	width: 400px;
+  	background: rgba(0,0,0,.9);
+  	border-radius: 5px;
+  	color: white;
+  	font-size: 32px;
+  	font-family: hermes;
+  	text-align: center;
+  	padding-top: 80px;
 
+}
+.progress-container{
+	width: 100%;
+	height: 30px;
+	background: blue;
+	position: fixed;
+
+}
+.progress-bar{
+	width: 0%;
+	height: 30px;
+	background: green;
+}
+#loading {
+	background-color: #EF4848;
+	height: 7px;
+	width: 0px;
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	z-index: 999
 }
