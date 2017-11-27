@@ -20,7 +20,7 @@
 
 
 body{
-	min-height: 2000px;
+	min-height: 5000px;
 	/*overflow: hidden;*/
 	/*background: #EAFFE7;*/
 }
@@ -80,10 +80,18 @@ body{
 }
 
 .open-photo-button{
-	width: 200px;
-	height: 100px;
-	background: red;
+	width: 40vh;
+	height: 18vh;
+	background: #FF7070;
 	margin: 30vh auto 0px;
+	border-radius: 10px;
+	font-size:4vh;
+	text-align: center;
+	padding-top: 3vh;
+	font-family: tahoma;
+	color: white;
+	border-bottom: 10px solid #FF3D3D
+
 }
 
 .my-photo{
@@ -94,6 +102,23 @@ body{
 	margin: 30vh 0 0 0 ;
 	background: url(../img/my-photo.jpg);
 	background-size: cover;
+
+}
+.about-my{
+	width: 100%;
+	min-height: 500px;
+	margin-top: 10vh;
+	border-top: 2px solid rgba(0,0,0,.1) ;
+	border-bottom: 2px solid  rgba(0,0,0,.1);
+	font-family: hermes; padding: 2vh;
+	text-overflow: clip;
+}
+.about-my>h1{
+	text-align: center;
+	font-family: hermes;
+	margin-top: 3vh;
+
+
 }
 /*classes*/
 
