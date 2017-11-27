@@ -110,7 +110,7 @@ body{
 	margin-top: 10vh;
 	border-top: 2px solid rgba(0,0,0,.1) ;
 	border-bottom: 2px solid  rgba(0,0,0,.1);
-	font-family: hermes; padding: 2vh;
+	font-family: hermes;
 	text-overflow: clip;
 }
 .about-my>h1{
