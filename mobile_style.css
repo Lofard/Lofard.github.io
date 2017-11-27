@@ -99,7 +99,7 @@ body{
 	width: 100%;
 	height: 80vh;
 	display: none;
-	margin: 30vh 0px 0px 0px ;
+	margin: 30vh auto 0px ;
 	background: url(../img/my-photo.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
