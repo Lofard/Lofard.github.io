@@ -16,6 +16,8 @@
     	</div>
     	<div id="wrapper">
     		<div class="logo"></div>
+    		<div class="open-photo-button">НАЖМИТЕ,ЕСЛИ ХОТИТЕ УВИДЕТЬ МОЕ ФОТО</div>
+    		<div class="my-photo"></div>
     	</div>
 		<!-- <div id="down"></div> -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -45,6 +47,14 @@
 		scroll_fn();
 		});
 
+		});
+		open = false;
+		$('.open-photo-button').click(function(){
+			
+				$('.my-photo').show('slow');
+				$('.open-photo-button').hide('slow');
+				
+			
 		});
 	</script>
 	

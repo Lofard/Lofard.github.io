@@ -79,6 +79,22 @@ body{
 	font-weight: ;
 }
 
+.open-photo-button{
+	width: 200px;
+	height: 100px;
+	background: red;
+	margin: 30vh auto 0px;
+}
+
+.my-photo{
+	background: green;
+	width: 100%;
+	height: 80vh;
+	display: none;
+	margin: 30vh 0 0 0 ;
+	background: url(../img/my-photo.jpg);
+	background-size: cover;
+}
 /*classes*/
 
 /**/
