@@ -101,7 +101,7 @@ body{
 	display: none;
 	margin: 30vh 0 0 0 ;
 	background: url(../img/my-photo.jpg);
-	background-size: cover;
+	background-size: contain;
 
 }
 .about-my{
