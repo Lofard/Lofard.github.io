@@ -20,10 +20,12 @@
 
 
 body{
+        margin-left:2px;
 	/*min-height: 5000px;*/
 	/*overflow: hidden;*/
 	/*background: #EAFFE7;*/
-}
+
+} 
 
 /*classes*/
 .hello{
